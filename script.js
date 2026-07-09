@@ -23,5 +23,3 @@ fetch("videos.json")
         `;
 
     });
-
-});
