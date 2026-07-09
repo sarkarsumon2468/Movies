@@ -11,6 +11,8 @@ fetch("videos.json")
 
             <h2>${video.title}</h2>
 
+            <p><strong>📅 Released Date:</strong> ${video.date}</p>
+
             <p><strong>📅 Upload Date:</strong> ${video.date}</p>
 
             <p><strong>📦 Video Size:</strong> ${video.size}</p>
