@@ -11,9 +11,9 @@ fetch("videos.json")
 
     <h2>${video.title}</h2>
 
-    <p><strong>📅 Released Date:</strong> ${video.releaseDate}</p>
-
     ${video.description ? `<p class="description">${video.description}</p>` : ""}
+
+    <p><strong>📅 Released Date:</strong> ${video.releaseDate}</p>
 
     <p><strong>📅 Upload Date:</strong> ${video.uploadDate}</p>
 
