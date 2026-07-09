@@ -16,7 +16,7 @@ fetch("videos.json")
             <p>📦 ${video.size}</p>
 
             <a href="${video.link}" target="_blank">
-                <button>⬇ DOWNLOAD</button>
+                <button>DOWNLOAD</button>
             </a>
 
         </div>
