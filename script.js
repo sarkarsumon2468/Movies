@@ -11,9 +11,9 @@ fetch("videos.json")
 
             <h2>${video.title}</h2>
 
-            <p>📅 ${video.date}</p>
+            <p><strong>📅 Upload Date:</strong> ${video.date}</p>
 
-            <p>📦 ${video.size}</p>
+            <p><strong>📦 Video Size:</strong> ${video.size}</p>
 
             <a href="${video.link}" target="_blank">
                 <button>DOWNLOAD</button>
