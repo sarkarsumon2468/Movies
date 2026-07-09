@@ -6,23 +6,25 @@ fetch("videos.json")
 
     videos.forEach(video => {
 
-        container.innerHTML += `
-        <div class="card">
+     container.innerHTML += `
+<div class="card">
 
-            <h2>${video.title}</h2>
+    <h2>${video.title}</h2>
 
-            <p><strong>📅 Released Date:</strong> ${video.date}</p>
+    <p><strong>📅 Released Date:</strong> ${video.releaseDate}</p>
 
-            <p><strong>📅 Upload Date:</strong> ${video.date}</p>
+    ${video.description ? `<p class="description">${video.description}</p>` : ""}
 
-            <p><strong>📦 Video Size:</strong> ${video.size}</p>
+    <p><strong>📅 Upload Date:</strong> ${video.uploadDate}</p>
 
-            <a href="${video.link}" target="_blank">
-                <button>DOWNLOAD</button>
-            </a>
+    <p><strong>📦 Video Size:</strong> ${video.size}</p>
 
-        </div>
-        `;
+    <a href="${video.link}" target="_blank">
+        <button>DOWNLOAD</button>
+    </a>
+
+</div>
+`;
 
     });
     
